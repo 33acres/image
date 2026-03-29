@@ -1316,6 +1316,17 @@ ul, ol { list-style: none; }
   line-height: 1.8;
   margin-bottom: 24px;
 }
+.footer-links {
+  margin-bottom: 20px;
+}
+.footer-link-item {
+  font-size: 0.78rem;
+  color: #aaa;
+  transition: color 0.2s;
+}
+.footer-link-item:hover {
+  color: #C9A84C;
+}
 .footer-copy {
   font-size: 0.7rem;
   color: #666;
@@ -1361,6 +1372,108 @@ ul, ol { list-style: none; }
 
 
 /* ==============================================
+   PRIVACY POLICY PAGE
+   ============================================== */
+.pp-section {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.pp-breadcrumb {
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 32px;
+}
+.pp-breadcrumb a {
+  color: #C9A84C;
+  transition: color 0.2s;
+}
+.pp-breadcrumb a:hover { color: #b8993f; }
+.pp-breadcrumb span { margin: 0 6px; }
+
+.pp-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #C9A84C;
+}
+@media (min-width: 768px) { .pp-title { font-size: 2.2rem; } }
+
+.pp-body {
+  max-width: 800px;
+}
+.pp-intro {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 2;
+  margin-bottom: 40px;
+  padding: 24px;
+  background: #F7F7F7;
+  border-radius: 8px;
+}
+.pp-block {
+  margin-bottom: 36px;
+}
+.pp-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ECECEC;
+}
+.pp-num {
+  color: #C9A84C;
+  font-weight: 900;
+  margin-right: 4px;
+}
+.pp-block p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 2;
+  margin-bottom: 12px;
+}
+.pp-sub {
+  font-weight: 600;
+  color: #444 !important;
+  margin-top: 16px;
+}
+.pp-list {
+  margin: 12px 0 16px 24px;
+  list-style: decimal;
+}
+.pp-list li {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 2;
+  padding: 4px 0;
+}
+.pp-contact {
+  background: #FAFAFA;
+  border: 1px solid #ECECEC;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 16px 0;
+}
+.pp-contact p {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 4px;
+}
+.pp-contact-label {
+  font-size: 0.8rem !important;
+  color: #999 !important;
+  margin-bottom: 8px !important;
+}
+.pp-link {
+  color: #C9A84C;
+  text-decoration: underline;
+}
+.pp-link:hover { color: #b8993f; }
+
+
+/* ==============================================
    MOBILE SPECIFIC
    ============================================== */
 @media (max-width: 767px) {
@@ -1375,4 +1488,55 @@ ul, ol { list-style: none; }
   }
 
   .brand-content .section-heading { text-align: left !important; }
+
+  /* Hero: ensure text doesn't overflow */
+  .hero-section { overflow-x: hidden; }
+  .hero-stats-row { gap: 16px; }
+  .hero-stat-num { font-size: 1.5rem; }
+  .hero-sub { font-size: 0.85rem; }
+  .hero-trust-row { gap: 6px; flex-wrap: wrap; }
+  .hero-trust-item { font-size: 0.7rem; padding: 4px 10px; }
+
+  /* Checklist: improve spacing */
+  .checklist-item { padding: 16px; }
+
+  /* Fear cards: fix padding */
+  .fear-card { padding: 24px 20px; }
+
+  /* CTA banner */
+  .cta-banner-text { font-size: 0.95rem; }
+  .cta-banner-btn { padding: 14px 28px; font-size: 0.88rem; }
+
+  /* Profile section */
+  .profile-photo img { max-width: 200px; }
+
+  /* Comparison table: ensure scroll hint */
+  .comparison-table-wrap { margin-left: -8px; margin-right: -8px; padding: 0 8px; }
+
+  /* Service cards */
+  .service-note { padding: 24px 20px; }
+  .service-note-heading { font-size: 1rem; }
+
+  /* Newsletter */
+  .newsletter-card { padding: 32px 20px; }
+
+  /* Closing CTA */
+  .cta-closing { padding: 56px 0; }
+  .cta-primary-btn { padding: 16px 28px; font-size: 0.88rem; }
+  .cta-secondary-btn { padding: 14px 24px; font-size: 0.82rem; }
+
+  /* Privacy policy */
+  .pp-section { padding-top: 84px; padding-bottom: 48px; }
+  .pp-title { font-size: 1.4rem; }
+  .pp-intro { padding: 20px; font-size: 0.88rem; }
+  .pp-heading { font-size: 1rem; }
+  .pp-contact { padding: 16px 20px; }
+
+  /* Prevent horizontal overflow globally */
+  body { overflow-x: hidden; }
+  .container { padding: 0 16px; }
+
+  /* Float CTA: smaller on mobile */
+  .float-cta { padding: 8px 16px 16px; }
+  .float-cta-btn { font-size: 0.85rem; padding: 14px 20px; }
 }
