@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>社長が休んでも、売上が止まらない会社をつくる｜BE PROTEAN（ビープロ）</title>
+  <meta name="description" content="広告・SNS・全ファネルをワンストップで整え、社内に残す。上場企業研修実績・月3億円広告運用経験から、5〜20人の社長が現場を抜け出すための設計をします。">
+  <link rel="stylesheet" href="lp.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ==========================================
+     NAV（固定）
+========================================== -->
+<nav class="nav-fixed" id="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">BE PROTEAN</div>
+    <div class="nav-links">
+      <a href="#results" class="nav-link-item">実績</a>
+      <a href="#service" class="nav-link-item">サービス</a>
+      <a href="#faq" class="nav-link-item">FAQ</a>
+    </div>
+    <div class="nav-cta-wrap">
+      <a href="#newsletter" class="nav-cta-btn">無料で受け取る</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#results" class="mobile-menu-link">実績</a>
+    <a href="#service" class="mobile-menu-link">サービス</a>
+    <a href="#faq" class="mobile-menu-link">FAQ</a>
+    <a href="#newsletter" class="mobile-menu-link mobile-menu-cta">無料で受け取る</a>
+  </div>
+</nav>
+
+
+<!-- ==========================================
+     HERO
+========================================== -->
+<section id="hero" class="hero-section">
+  <div class="container hero-grid">
+
+    <!-- Left: Text -->
+    <div class="hero-text">
+      <p class="hero-badge">
+        <span class="hero-badge-line"></span>
+        BE PROTEAN — 森本裕也（もーりー）
+      </p>
+
+      <div class="hero-stats-row">
+        <div class="hero-stat">
+          <span class="hero-stat-label">導入サイト実績</span>
+          <span class="hero-stat-num">14<span class="hero-stat-unit">年</span></span>
+          <span class="hero-stat-sub">Webマーケ歴</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-label">サイト改善実績</span>
+          <span class="hero-stat-num">月商2<span class="hero-stat-unit">倍</span></span>
+          <span class="hero-stat-sub">266万→490万</span>
+        </div>
+      </div>
+
+      <h1 class="hero-heading">
+        社長が休んでも、<br>
+        <span class="text-accent">売上が止まらない</span><br>
+        会社をつくる。
+      </h1>
+
+      <p class="hero-sub">
+        お客さんを集める仕組みをゼロから整えて、<br>
+        <strong class="text-accent">社長がいなくても売上が動く状態</strong>にして渡す。<br>
+        5〜20人の会社だけを支援しています。
+      </p>
+
+      <div class="hero-logos">
+        <p class="hero-logos-label">＼ 業界問わず多くの企業様をご支援 ／</p>
+        <div class="hero-logos-row">
+          <span class="hero-logo-item">上場企業研修</span>
+          <span class="hero-logo-item">月3億円広告運用</span>
+          <span class="hero-logo-item">30案件+実績</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="hero-form-wrap">
+      <div class="hero-form-card">
+        <p class="hero-form-title">「社長が現場を抜け出す」<br>チェックシートを無料プレゼント！</p>
+        <form id="hero-form" onsubmit="submitNewsletterForm(event); return false;">
+          <div class="form-group">
+            <label for="hf-name">お名前</label>
+            <input type="text" id="hf-name" placeholder="森本 裕也">
+          </div>
+          <div class="form-group">
+            <label for="hf-email">メールアドレス</label>
+            <input type="email" id="hf-email" placeholder="you@example.com" required>
+          </div>
+          <button type="submit" class="form-submit-btn">
+            無料でチェックシートを受け取る
+            <span class="btn-arrow">＞</span>
+          </button>
+        </form>
+        <a href="https://www.jicoo.com/t/TMzPUnScqW70/f/eS9NLCkt8NhV" class="hero-form-sub-link">15分の無料相談を申し込む →</a>
+        <p class="hero-form-note">登録無料・いつでも解除できます</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     自己診断「この状態、心当たりありませんか？」
+========================================== -->
+<section class="section bg-gray" id="checklist">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <p class="section-lead">
+        「外注のせい」でも、「社員のせい」でもない——<br>
+        <strong>「自分の作り方が間違っていた」と、どこかわかっている。でも誰にも言えない。</strong>
+      </p>
+      <p class="section-tag">CHECK LIST</p>
+      <h2 class="section-heading">この状態、<br>心当たりありませんか？</h2>
+    </div>
+
+    <div class="checklist-wrap fade-in">
+      <ul class="checklist">
+        <li class="checklist-item">
+          <span class="checklist-icon warn">▶</span>
+          <div>
+            <strong>次の担当者も、また同じように辞めると思っている</strong>
+            <p class="checklist-detail">問題は「この人」じゃない。でも次の採用を始めながら、そのことには触れられない</p>
+          </div>
+        </li>
+        <li class="checklist-item">
+          <span class="checklist-icon warn">▶</span>
+          <div>
+            <strong>自分がいないと止まるのは、自分がそう作ってきたからだとわかっている</strong>
+            <p class="checklist-detail">会社のせいでも、社員のせいでもない。でもそれは誰にも言えない</p>
+          </div>
+        </li>
+        <li class="checklist-item">
+          <span class="checklist-icon warn">▶</span>
+          <div>
+            <strong>外注に失敗した理由は「外注先が悪かった」ことにしてある</strong>
+            <p class="checklist-detail">本当は、「何を任せるか」の設計をしていなかった自分の問題だとわかっている</p>
+          </div>
+        </li>
+        <li class="checklist-item">
+          <span class="checklist-icon warn">▶</span>
+          <div>
+            <strong>「仕組み化したい」と言いながら、自分が一番手放せていない</strong>
+            <p class="checklist-detail">任せたいのに任せられない。その本当の理由は、まだ誰にも話したことがない</p>
+          </div>
+        </li>
+        <li class="checklist-item">
+          <span class="checklist-icon warn">▶</span>
+          <div>
+            <strong>休めないのは、忙しいからじゃなく、自分がいなくても動くと証明できた日がないから</strong>
+            <p class="checklist-detail">休む「方法」はわかっている。でも証明されていない以上、離れられない</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="quote-box fade-in">
+      <blockquote>
+        <p>
+          「誰かのせい」にできれば、まだ楽だった。<br>
+          <strong class="text-accent">自分が原因だと気づいてしまったあとが、本当に孤独な場所です。</strong><br>
+          その孤独を起点にすれば、設計は変えられます。
+        </p>
+      </blockquote>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     FEAR（今のまま続けると…）
+========================================== -->
+<section class="section" id="fear">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <p class="section-tag">THE RISK</p>
+      <h2 class="section-heading">今のまま<br><span class="text-danger">続けると、どうなるか</span></h2>
+    </div>
+
+    <div class="fear-cards fade-in">
+      <div class="fear-card">
+        <div class="fear-card-icon">⚠</div>
+        <div>
+          <p class="fear-card-title">受注の波が来るたびに、社長だけが振り回される</p>
+          <p class="fear-card-desc">「どこに頼めば仕事が来るか」が社長の頭の中だけにある限り、景気の波に直撃される構造は変わらない。</p>
+        </div>
+      </div>
+      <div class="fear-card">
+        <div class="fear-card-icon">⚠</div>
+        <div>
+          <p class="fear-card-title">次の担当者が辞めたとき、また売上が揺れる</p>
+          <p class="fear-card-desc">判断基準が「人の頭の中」にある状態は、次の退職のたびに同じリスクを繰り返す。</p>
+        </div>
+      </div>
+      <div class="fear-card">
+        <div class="fear-card-icon">⚠</div>
+        <div>
+          <p class="fear-card-title">社長が倒れたとき、会社が止まる</p>
+          <p class="fear-card-desc">「自分がいないと止まる」という状態は、社長の体力とメンタルの限界を、会社の限界にする。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fear-note fade-in">
+      <p>
+        これは「頑張りが足りない」のではありません。<br>
+        <strong class="text-accent">「売上導線が設計されていない」という構造の話</strong>です。<br>
+        設計を変えれば、社長の負担量を変えずに会社の動き方が変わります。
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     CTA mid-page
+========================================== -->
+<section class="cta-banner">
+  <div class="container cta-banner-inner">
+    <p class="cta-banner-text">まずは無料チェックシートで<br class="sp-only">自社の売上導線を確認しませんか？</p>
+    <a href="#newsletter" class="cta-banner-btn">無料でチェックシートを受け取る　＞</a>
+  </div>
+</section>
+
+
+<!-- ==========================================
+     STORY（救急車の夜）
+========================================== -->
+<section class="section bg-gray" id="story">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <p class="section-tag">MY STORY</p>
+    </div>
+
+    <div class="story-content fade-in">
+      <p class="story-lead">
+        1歳半の息子がぬいぐるみの目玉を飲み込んだのは、<br>
+        私がスマホで広告数値を確認した、ほんの数十秒の隙でした。
+      </p>
+      <p class="story-body">
+        救急車を呼んで、病院の処置室で泣いている息子の横に座りながら、何も言えなかった。
+      </p>
+      <p class="story-body">
+        そのとき抱えていた仕事は30案件以上。深夜2時まで毎晩パソコンを開いていた。
+      </p>
+      <p class="story-highlight">
+        頑張りが足りなかったんじゃない。<br>
+        <strong class="text-accent">「自分がいなくても動く設計」を作っていなかっただけだ</strong>——と、あの夜に気づきました。
+      </p>
+
+      <div class="quote-box">
+        <blockquote>
+          <p class="quote-italic">
+            "あの夜、息子の泣き声を聞きながら誓いました。<br>
+            <strong>もう二度と、仕事のせいで家族を後回しにしない——</strong><br>
+            そのために必要なのは「根性」じゃなく「設計」だった。"
+          </p>
+          <div class="quote-author">— 森本裕也（もーりー）</div>
+        </blockquote>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     WHO I AM（プロフィール）
+========================================== -->
+<section class="section" id="profile">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <p class="section-tag">WHO I AM</p>
+      <h2 class="section-heading">森本裕也（もーりー）</h2>
+      <p class="section-sub">BE PROTEAN 代表</p>
+    </div>
+
+    <div class="profile-grid fade-in">
+
+      <!-- Photo -->
+      <div class="profile-photo">
+        <img src="img/moody-profile.jpg" alt="森本裕也（もーりー）">
+      </div>
+
+      <!-- Info -->
+      <div class="profile-info">
+        <div class="profile-services">
+          <span class="service-pill">広告運用</span>
+          <span class="service-pill">SNS設計</span>
+          <span class="service-pill">LINE構築</span>
+          <span class="service-pill">ファネル設計</span>
+          <span class="service-pill">内製化支援</span>
+          <span class="service-pill">キャリアコンサルタント</span>
+        </div>
+
+        <div class="profile-career">
+          <div class="profile-career-item">
+            <div class="profile-career-marker"></div>
+            <div>
+              <p class="profile-career-title">月3億円の広告運用</p>
+              <p class="profile-career-desc">Google / Meta / Yahoo 広告の大規模運用で、売上ファネル全体を設計・最適化した経験。</p>
+            </div>
+          </div>
+          <div class="profile-career-item">
+            <div class="profile-career-marker"></div>
+            <div>
+              <p class="profile-career-title">上場企業（シャイン）研修実績</p>
+              <p class="profile-career-desc">インスタグラム研修・SNS導線設計を担当。複数拠点への横展開支援。</p>
+            </div>
+          </div>
+          <div class="profile-career-item">
+            <div class="profile-career-marker"></div>
+            <div>
+              <p class="profile-career-title">ペット事業を年商2,000万→1億円規模へ</p>
+              <p class="profile-career-desc">広告→LINE→成約の導線を社内資産として整え、売上規模を転換。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-quals">
+          <p class="profile-quals-label">保有資格・専門領域</p>
+          <div class="profile-quals-list">
+            <div class="profile-qual-item accent">国家資格 キャリアコンサルタント</div>
+            <div class="profile-qual-item">Facebook / Google 広告運用</div>
+            <div class="profile-qual-item">Instagram / YouTube SNS運用・設計</div>
+            <div class="profile-qual-item">LINE（Lステップ）自動化構築</div>
+            <div class="profile-qual-item">売上ファネル設計・外注チーム構築</div>
+          </div>
+        </div>
+
+        <div class="profile-career-consul">
+          <div class="profile-consul-badge">CAREER CONSULTANT</div>
+          <p class="profile-consul-text">
+            国家資格キャリアコンサルタントを持つから、<br>
+            <strong class="text-accent">「働く人の気持ち」に寄り添った組織構築ができる。</strong>
+          </p>
+          <p class="profile-consul-desc">
+            売上導線を整えるだけでは終わりません。社内担当者が「動きたい」と思える体制を設計することが、内製化を本当に機能させます。
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     RESULTS（実績・再現性の証明）
+========================================== -->
+<section class="section bg-gray" id="results">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <p class="section-tag">RESULTS</p>
+      <h2 class="section-heading">5〜20人の会社で<br>起きた変化</h2>
+      <p class="section-sub-text">
+        月3億円の広告経験は、5〜20人規模でこそ一番効く。<br>小さいからこそ、1枚の手順書が会社全体を変える。
+      </p>
+    </div>
+
+    <div class="results-cards fade-in">
+      <div class="result-card">
+        <div class="result-card-top gold"></div>
+        <p class="result-card-label">CASE 01 — 月商改善</p>
+        <p class="result-card-num">266万→490万</p>
+        <p class="result-card-desc">広告費も予算も増やさずに、売上導線を整えただけ。「どこで詰まっているか」を特定したら、改善場所が一本に絞れた。</p>
+      </div>
+      <div class="result-card">
+        <div class="result-card-top blue"></div>
+        <p class="result-card-label">CASE 02 — 担当者が3人変わっても</p>
+        <p class="result-card-num">売上維持</p>
+        <p class="result-card-desc">「なぜこの設計にしたか」が手順書として残っていたから、誰が担当しても同じ判断ができた。属人化が解消された状態。</p>
+      </div>
+      <div class="result-card">
+        <div class="result-card-top brown"></div>
+        <p class="result-card-label">CASE 03 — ペット事業（売上規模転換）</p>
+        <p class="result-card-num">年商1億円規模へ</p>
+        <p class="result-card-desc">年商2,000万から1億円規模への転換。変えたのはサービスではない。広告→LINE→成約の導線を社内資産として整えたことが変化の核心だった。</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     COMPARISON（3つの違い）
+========================================== -->
+<section class="section" id="comparison">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <p class="section-tag">COMPARISON</p>
+      <h2 class="section-heading">何が違うのか</h2>
+      <p class="section-sub-text">
+        「内製化支援」と名乗るサービスは増えています。<br>でも、何を内製化するかで全く別物になります。
+      </p>
+    </div>
+
+    <div class="comparison-table-wrap fade-in">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th class="comp-th-label"></th>
+            <th class="comp-th-normal">普通の<br>業務委託</th>
+            <th class="comp-th-normal">一般的な<br>内製化支援</th>
+            <th class="comp-th-accent">もーりーの<br>支援</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="comp-td-label">支援の対象</td>
+            <td class="comp-td-normal">業務を切り出して<br>依頼するだけ</td>
+            <td class="comp-td-normal">広告だけ、<br>LINEだけ（局所）</td>
+            <td class="comp-td-accent">広告×SNS×LINE<br>ファネル全体</td>
+          </tr>
+          <tr>
+            <td class="comp-td-label">支援終了後</td>
+            <td class="comp-td-normal">社内に何も残らない<br>また一から</td>
+            <td class="comp-td-normal">一部は動くが<br>全体は繋がらない</td>
+            <td class="comp-td-accent">売上ファネル全体が<br>社内資産として残る</td>
+          </tr>
+          <tr>
+            <td class="comp-td-label">担当者が辞めたら</td>
+            <td class="comp-td-normal">止まる</td>
+            <td class="comp-td-normal">局所的に止まる</td>
+            <td class="comp-td-accent">手順書で<br>引き継ぎができる</td>
+          </tr>
+          <tr>
+            <td class="comp-td-label">人への目線</td>
+            <td class="comp-td-normal">なし</td>
+            <td class="comp-td-normal">なし</td>
+            <td class="comp-td-accent highlight">キャリアコンサルタント<br>の視点で設計</td>
+          </tr>
+          <tr>
+            <td class="comp-td-label">AI時代への対応</td>
+            <td class="comp-td-normal">×</td>
+            <td class="comp-td-normal">△ 局所的</td>
+            <td class="comp-td-accent">○ 構造ごと整えるので<br>人依存にならない</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="quote-box fade-in">
+      <blockquote>
+        <p>
+          広告だけ、LINEだけの内製化では「局所的に動く社員」が生まれます。<br>
+          もーりーが整えるのは、<strong class="text-accent">売上に直結する構造そのもの</strong>です。<br>
+          どこを改善すれば数字が動くかを、社長自身が判断できるようになります。
+        </p>
+      </blockquote>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     BEFORE / AFTER
+========================================== -->
+<section class="section bg-gray" id="before-after">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <p class="section-tag">WHAT CHANGES</p>
+      <h2 class="section-heading">6ヶ月後に<br>起きていること</h2>
+    </div>
+
+    <div class="ba-grid fade-in">
+      <!-- Before -->
+      <div class="ba-card ba-before">
+        <p class="ba-label">今 — BEFORE</p>
+        <div class="ba-items">
+          <p class="ba-item">広告費を払っても、どこを改善すればいいかわからない</p>
+          <p class="ba-item">担当者が辞めるたびに、売上が揺れる</p>
+          <p class="ba-item">自分が止まると、会社も止まる</p>
+        </div>
+      </div>
+      <!-- After -->
+      <div class="ba-card ba-after">
+        <p class="ba-label">6ヶ月後 — AFTER</p>
+        <div class="ba-items">
+          <p class="ba-item">広告→SNS→LINEの導線が1本で繋がっている</p>
+          <p class="ba-item">担当者が変わっても、手順書で判断が止まらない</p>
+          <p class="ba-item">社長が1週間休んでも、売上導線は回り続ける</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     SERVICE（サービス詳細）
+========================================== -->
+<section class="section" id="service">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <p class="section-tag">WHAT I DO</p>
+      <h2 class="section-heading">デジタルマーケティングにおいて重要な<br><span class="text-accent">広告</span> / <span class="text-accent">SNS</span> / <span class="text-accent">LINE</span> / <span class="text-accent">ファネル設計</span><br>まですべてを網羅</h2>
+    </div>
+
+    <div class="service-cards fade-in">
+      <div class="service-card">
+        <h3 class="service-card-title accent-bg">広告運用</h3>
+        <ul class="service-card-list">
+          <li>Google / Meta / Yahoo 広告</li>
+          <li>ターゲティング設計</li>
+          <li>LP改善提案</li>
+          <li>ROAS最適化</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3 class="service-card-title accent-bg">SNS設計</h3>
+        <ul class="service-card-list">
+          <li>Instagram / YouTube 運用</li>
+          <li>コンテンツ企画</li>
+          <li>フォロワー導線設計</li>
+          <li>投稿テンプレート作成</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3 class="service-card-title accent-bg">LINE構築</h3>
+        <ul class="service-card-list">
+          <li>Lステップ自動化</li>
+          <li>シナリオ設計</li>
+          <li>セグメント配信</li>
+          <li>成約導線構築</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3 class="service-card-title accent-bg">ファネル設計</h3>
+        <ul class="service-card-list">
+          <li>売上導線の全体設計</li>
+          <li>KPI設定・管理</li>
+          <li>手順書・マニュアル作成</li>
+          <li>内製化チーム構築</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-note fade-in">
+      <h3 class="service-note-heading">イメージしづらい内容は、<br><span class="text-accent">すぐに</span>動けるよう具体的な手順書まで作成</h3>
+      <p class="service-note-desc">
+        「どの数字を見ればいいか」「何をどの順番でやるか」——<br>
+        抽象的な戦略ではなく、<strong>明日から使える手順書</strong>を納品物として渡します。
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     NEWSLETTER（メルマガ登録）
+========================================== -->
+<section class="section bg-gray" id="newsletter">
+  <div class="container">
+
+    <div class="newsletter-card fade-in">
+      <p class="section-tag">FREE DOWNLOAD</p>
+      <h2 class="section-heading">無料チェックシート<br>「社長が抜け出すための棚卸し」</h2>
+      <p class="newsletter-desc">
+        あなたの会社の売上導線が「社長依存」かどうかを、<br>5分で可視化できるチェックシートです。
+      </p>
+
+      <form id="newsletter-form" onsubmit="submitNewsletterForm(event); return false;" class="newsletter-form">
+        <div class="newsletter-form-row">
+          <input type="text" id="nl-name" placeholder="お名前" class="nl-input">
+          <input type="email" id="nl-email" placeholder="メールアドレス" required class="nl-input">
+          <button type="submit" id="nl-submit" class="nl-submit-btn">無料でチェックシートを受け取る →</button>
+        </div>
+        <div id="nl-success" class="nl-msg success" style="display:none;">送信が完了しました。メールをご確認ください。</div>
+        <div id="nl-error" class="nl-msg error" style="display:none;">送信に失敗しました。もう一度お試しください。</div>
+      </form>
+      <p class="newsletter-form-note">登録無料・いつでも解除できます</p>
+      <p class="newsletter-form-sub">
+        毎週、自社の売上導線を整える実践ノウハウを配信しています。<br>
+        月商266万→490万になったときにやったことや、<br>
+        外注で何度も失敗した私が気づいたことを具体的に書いています。
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     こんな方へ（WHO IS THIS FOR）
+========================================== -->
+<section class="section" id="who">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <p class="section-tag">WHO IS THIS FOR</p>
+      <h2 class="section-heading">こんな社長に<br>読んでほしい</h2>
+    </div>
+
+    <div class="who-list fade-in">
+      <ul class="checklist">
+        <li class="checklist-item">
+          <span class="checklist-icon check">✓</span>
+          <div>5〜20人の会社を経営していて、現場から抜け出せていない</div>
+        </li>
+        <li class="checklist-item">
+          <span class="checklist-icon check">✓</span>
+          <div>外注に何度も失敗して、また同じことを繰り返す気がしている</div>
+        </li>
+        <li class="checklist-item">
+          <span class="checklist-icon check">✓</span>
+          <div>広告・SNS・LINEがバラバラで、どこを直せばいいかわからない</div>
+        </li>
+        <li class="checklist-item">
+          <span class="checklist-icon check">✓</span>
+          <div>「担当者が変わると売上が変わる」という状況が続いている</div>
+        </li>
+        <li class="checklist-item">
+          <span class="checklist-icon check">✓</span>
+          <div>「仕組み化したい」と思いながら、何から手をつければいいかわからない</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="quote-box fade-in">
+      <blockquote>
+        <p>
+          逆に、<strong class="text-accent">「とにかく今の外注先のクオリティを上げてほしい」「広告費を増やせば解決する」</strong>とお考えの方には、今の段階では力になれません。<br>
+          「導線全体を整えて、社内に残したい」という意志がある方と一緒に動きたいと思っています。
+        </p>
+      </blockquote>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     参加者の声
+========================================== -->
+<section class="section bg-gray" id="voice">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <p class="section-tag">VOICE</p>
+      <h2 class="section-heading">話した方からの声</h2>
+    </div>
+
+    <div class="voice-cards fade-in">
+      <div class="voice-card">
+        <p class="voice-card-text">
+          「最初の15分で、半年間悩んでいたことの構造がわかった。問題は担当者じゃなかった、と初めて実感した」
+        </p>
+        <div class="voice-card-author">— 建設業・従業員12名・代表</div>
+      </div>
+      <div class="voice-card">
+        <p class="voice-card-text">
+          「外注失敗を繰り返す理由が、担当者のせいじゃないとわかった。構造を変える、という発想がなかった」
+        </p>
+        <div class="voice-card-author">— 小売業・従業員8名・二代目</div>
+      </div>
+      <div class="voice-card">
+        <p class="voice-card-text">
+          「売り込まれると思っていたが、終わったとき『また話したい』と思っていた。広告とLINEの繋がりが初めて見えた」
+        </p>
+        <div class="voice-card-author">— サービス業・従業員17名・社長</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     FAQ
+========================================== -->
+<section class="section" id="faq">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <p class="section-tag">FAQ</p>
+      <h2 class="section-heading">よくある質問</h2>
+    </div>
+
+    <div class="faq-wrap fade-in">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>費用はいくらかかりますか？</span>
+          <svg class="faq-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="9" y1="3" x2="9" y2="15"/><line x1="3" y1="9" x2="15" y2="9"/>
+          </svg>
+        </button>
+        <div class="faq-a">
+          最初の15分面談は完全無料です。メルマガ登録も無料です。継続支援のご依頼については、初回面談で現状をお聞きした後にご提案します。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>どんな業種に対応していますか？</span>
+          <svg class="faq-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="9" y1="3" x2="9" y2="15"/><line x1="3" y1="9" x2="15" y2="9"/>
+          </svg>
+        </button>
+        <div class="faq-a">
+          5〜20人規模の中小企業であれば業種は問いません。建設・小売・サービス・製造業など、広告×SNS×LINE導線の設計は業種を問わず機能します。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>広告費はどれくらい必要ですか？</span>
+          <svg class="faq-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="9" y1="3" x2="9" y2="15"/><line x1="3" y1="9" x2="15" y2="9"/>
+          </svg>
+        </button>
+        <div class="faq-a">
+          今の広告費の規模感を前提に設計します。「予算が多ければ成果が出る」ではなく「どこに使うかの精度」が成果を決めます。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>社内にITに詳しい人間がいないのですが大丈夫ですか？</span>
+          <svg class="faq-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="9" y1="3" x2="9" y2="15"/><line x1="3" y1="9" x2="15" y2="9"/>
+          </svg>
+        </button>
+        <div class="faq-a">
+          問題ありません。むしろそういうケースを多く支援しています。社内担当者に求めるのは「手順書を見ながら動くこと」だけです。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>15分で何がわかるのですか？</span>
+          <svg class="faq-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="9" y1="3" x2="9" y2="15"/><line x1="3" y1="9" x2="15" y2="9"/>
+          </svg>
+        </button>
+        <div class="faq-a">
+          広告・SNS・LINEの3点で「今の導線がどこで詰まっているか」を特定します。翌日、面談で出てきた「棚卸しシート」をメールでお送りします。
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     BRAND PHILOSOPHY（BE PROTEANの由来）
+========================================== -->
+<section class="section bg-gray" id="brand">
+  <div class="container">
+
+    <div class="brand-content fade-in">
+      <div class="brand-text">
+        <p class="section-tag">BE PROTEAN — ブランドの意味</p>
+
+        <h2 class="section-heading" style="text-align:left;">
+          納品物は、<br>
+          <span class="text-accent">変幻自在な組織</span>そのもの。
+        </h2>
+
+        <p class="brand-body">
+          広告が変わっても動く。<br>
+          SNSのアルゴリズムが変わっても動く。<br>
+          担当者が変わっても動く。
+        </p>
+        <p class="brand-body-muted">
+          私が整えるのは「今の正解」ではありません。<br>
+          市場が変わるたびに、<strong>自分たちで売上ファネルを組み直せる組織</strong>を、納品物として渡します。
+        </p>
+
+        <div class="brand-origin">
+          <p class="brand-origin-label">PROTEAN / プロテアン</p>
+          <p class="brand-origin-text">
+            ギリシャ神話の海神プロテウス（Proteus）は、<br>
+            捕まえようとすると次々と姿を変えた。<br>
+            獅子になり、蛇になり、水になった。
+          </p>
+          <p class="brand-origin-body">
+            BE PROTEAN ——<strong class="text-accent">変幻自在であれ。</strong><br>
+            どんな市場の変化にも形を変えて対応できる組織を、<br>
+            5〜20人の会社に渡すこと。それが私の仕事の定義です。
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     CLOSING CTA
+========================================== -->
+<section id="contact" class="cta-closing">
+  <div class="container">
+
+    <div class="cta-closing-inner fade-in">
+      <p class="section-tag">TAKE ACTION</p>
+      <h2 class="section-heading">
+        まず、15分だけ<br>
+        <span class="text-accent">話してみてください。</span>
+      </h2>
+      <p class="cta-closing-desc">
+        「うちみたいな会社に、デジタルの話は関係ないかも」<br>
+        と思っている方こそ、聞いてほしい話があります。
+      </p>
+      <p class="cta-closing-body">
+        売り込みは一切しません。<br>
+        今の状況をそのまま話してもらえれば、それだけで十分です。
+      </p>
+
+      <div class="cta-closing-btns">
+        <a href="https://www.jicoo.com/t/TMzPUnScqW70/f/eS9NLCkt8NhV" class="cta-primary-btn">
+          無料で15分、今の状況を話す　＞
+        </a>
+        <a href="#newsletter" class="cta-secondary-btn">まずメルマガから読む</a>
+      </div>
+
+      <p class="cta-closing-note">申込後のキャンセルはいつでもできます。まず話すだけで構いません。</p>
+    </div>
+
+    <!-- Photo + Quote -->
+    <div class="cta-closing-quote fade-in">
+      <img src="img/moody-working.jpg" alt="森本裕也" class="cta-closing-photo">
+      <div class="quote-box">
+        <blockquote>
+          <p class="quote-italic">
+            「私が目指しているのは、この仕事が終わったあと<strong>『私がいなくても動く』</strong>状態を作ることです。依存させないことが、私の唯一の誠実さだと思っています」
+          </p>
+          <div class="quote-author">— 森本裕也（もーりー）</div>
+        </blockquote>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+<footer class="footer-main">
+  <div class="container footer-inner">
+    <div class="footer-logo">BE PROTEAN</div>
+    <p class="footer-desc">
+      森本裕也（もーりー）<br>
+      キャリアコンサルタント国家資格｜月3億円広告運用｜30案件以上の支援実績
+    </p>
+    <p class="footer-copy">&copy; 2026 BE PROTEAN. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- ==========================================
+     フローティングCTA
+========================================== -->
+<div id="float-cta" class="float-cta hidden">
+  <a href="#newsletter" class="float-cta-btn">
+    無料チェックシートを受け取る →
+  </a>
+</div>
+
+
+<!-- ==========================================
+     JavaScript
+========================================== -->
+<script>
+  // Intersection Observer: fade-in
+  const fadeEls = document.querySelectorAll('.fade-in');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+  fadeEls.forEach(el => io.observe(el));
+
+  // FAQ toggle
+  function toggleFaq(btn) {
+    const ans = btn.nextElementSibling;
+    const icon = btn.querySelector('.faq-icon');
+    const isOpen = ans.classList.contains('open');
+    document.querySelectorAll('.faq-a.open').forEach(a => {
+      a.classList.remove('open');
+      a.previousElementSibling.querySelector('.faq-icon').classList.remove('open');
+    });
+    if (!isOpen) { ans.classList.add('open'); icon.classList.add('open'); }
+  }
+
+  // Floating CTA
+  const floatCta = document.getElementById('float-cta');
+  const heroSection = document.getElementById('hero');
+  const contactSection = document.getElementById('contact');
+
+  function updateFloatCta() {
+    const heroBottom = heroSection.getBoundingClientRect().bottom;
+    const contactTop = contactSection.getBoundingClientRect().top;
+    const windowH = window.innerHeight;
+    if (heroBottom < 0 && contactTop > windowH) {
+      floatCta.classList.remove('hidden');
+    } else {
+      floatCta.classList.add('hidden');
+    }
+  }
+  window.addEventListener('scroll', updateFloatCta, { passive: true });
+  updateFloatCta();
+
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  });
+  // Close menu on link click
+  document.querySelectorAll('.mobile-menu-link').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+    });
+  });
+
+  // Nav background on scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  }, { passive: true });
+
+  // Newsletter Form
+  const APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL';
+
+  async function submitNewsletterForm(e) {
+    e.preventDefault();
+    const form = e.target;
+    const nameInput = form.querySelector('input[type="text"]');
+    const emailInput = form.querySelector('input[type="email"]');
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const name = (nameInput ? nameInput.value : '').trim();
+    const email = (emailInput ? emailInput.value : '').trim();
+
+    if (!email) {
+      emailInput.style.borderColor = '#e53e3e';
+      return;
+    }
+
+    submitBtn.textContent = '送信中…';
+    submitBtn.disabled = true;
+
+    try {
+      const body = new URLSearchParams({ action: 'subscribe', name, email });
+      await fetch(APPS_SCRIPT_URL, { method: 'POST', body });
+      const successEl = document.getElementById('nl-success');
+      if (successEl) successEl.style.display = 'block';
+      form.querySelectorAll('input, button[type=submit]').forEach(el => el.style.display = 'none');
+    } catch (err) {
+      const errorEl = document.getElementById('nl-error');
+      if (errorEl) errorEl.style.display = 'block';
+      submitBtn.textContent = '無料でチェックシートを受け取る →';
+      submitBtn.disabled = false;
+    }
+  }
+  window.submitNewsletterForm = submitNewsletterForm;
+</script>
+
+</body>
+</html>
