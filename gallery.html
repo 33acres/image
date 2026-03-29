@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MANNOX - Gallery">
+  <title>GALLERY | MANNOX</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="site-container gallery-page">
+    <!-- Header / Logo -->
+    <header class="header">
+      <h1 class="logo"><a href="index.html" class="logo-link">MANNOX</a></h1>
+    </header>
+
+    <!-- Gallery Image Detail (hidden by default) -->
+    <div id="gallery-detail" class="gallery-detail hidden">
+      <button id="gallery-detail-close" class="gallery-detail-close">&times;</button>
+      <img id="gallery-detail-img" src="" alt="">
+    </div>
+
+    <!-- Gallery Grid -->
+    <main class="gallery-main">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/gallery/beach soccer.jpg" alt="Beach Soccer">
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery/beerfes.JPG" alt="Beer Fes">
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery/beerfes.beerfes2.jpg" alt="Beer Fes 2">
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-url">w w w . m a n n o x . j p</p>
+    </footer>
+  </div>
+
+  <script>
+    var detail = document.getElementById('gallery-detail');
+    var detailImg = document.getElementById('gallery-detail-img');
+    var detailClose = document.getElementById('gallery-detail-close');
+
+    document.querySelectorAll('.gallery-item').forEach(function(item) {
+      item.addEventListener('click', function() {
+        var img = this.querySelector('img');
+        detailImg.src = img.src;
+        detailImg.alt = img.alt;
+        detail.classList.remove('hidden');
+      });
+    });
+
+    detailClose.addEventListener('click', function() {
+      detail.classList.add('hidden');
+    });
+
+    detail.addEventListener('click', function(e) {
+      if (e.target === detail) {
+        detail.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
