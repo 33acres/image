@@ -1,0 +1,154 @@
+/* ============================================
+   MANNOX DJ Team - Members Page Styles
+   ============================================ */
+
+/* Members Page */
+.members-page {
+  justify-content: flex-start;
+}
+
+/* Members Grid */
+.members-main {
+  flex: 1;
+}
+
+.members-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 900px;
+}
+
+/* Member Card */
+.member-card {
+  cursor: pointer;
+  text-align: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.member-card:hover {
+  opacity: 0.8;
+  transform: translateY(-4px);
+}
+
+.member-card-img {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.member-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.member-card-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* Member Detail Overlay */
+.member-detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 40px;
+}
+
+.member-detail.hidden {
+  display: none;
+}
+
+.member-detail-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 40px;
+  cursor: pointer;
+  line-height: 1;
+  transition: opacity 0.3s ease;
+}
+
+.member-detail-close:hover {
+  opacity: 0.7;
+}
+
+.member-detail img {
+  max-width: 600px;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 4px;
+}
+
+.member-detail-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+/* ============================================
+   Responsive Design - Members Page
+   ============================================ */
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+  .members-card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 640px) {
+  .members-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .member-card-name {
+    font-size: 12px;
+  }
+
+  .member-detail {
+    padding: 20px;
+  }
+
+  .member-detail img {
+    max-width: 100%;
+    max-height: 60vh;
+  }
+
+  .member-detail-name {
+    font-size: 16px;
+  }
+
+  .member-detail-close {
+    top: 10px;
+    right: 15px;
+    font-size: 32px;
+  }
+}

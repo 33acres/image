@@ -22,21 +22,21 @@
     <main class="about-content">
       <!-- Left: Image -->
       <div class="about-image">
-        <img src="images/hero.jpg" alt="MANNOX DJ Team">
+        <img id="about-hero" src="images/hero.jpg" alt="MANNOX DJ Team">
       </div>
 
       <!-- Right: Biography Text -->
       <div class="about-text">
         <!-- Japanese -->
         <div class="bio-ja">
-          <p>DJ6名、PA1名により構成されるDJチーム。</p>
+          <p>DJ7名、PA1名により構成されるDJチーム。</p>
           <p>それぞれが得意ジャンルが異なり、どんなシーンにも対応できる選曲と、会場に合わせたサウンドシステムの設置が可能。</p>
           <p>全員が横浜市都筑区在住のため、主に横浜市北部でプレイ。</p>
         </div>
 
         <!-- English -->
         <div class="bio-en">
-          <p>A DJ team consisting of 6 DJs and 1 PA engineer.</p>
+          <p>A DJ team consisting of 7 DJs and 1 PA engineer.</p>
           <p>Each member specializes in a different genre, enabling versatile track selection for any scene and custom sound system setups tailored to each venue.</p>
           <p>All members reside in Tsuzuki Ward, Yokohama, and primarily perform in the northern part of Yokohama City.</p>
         </div>
@@ -46,25 +46,28 @@
     <!-- Members Section -->
     <section class="members-section">
       <div class="members-grid">
-        <div class="member">
-          <p class="member-name">DJ mahomes</p>
-        </div>
-        <div class="member">
-          <p class="member-name">DJ koh</p>
-        </div>
-        <div class="member">
+        <div class="member member-clickable" data-image="images/mannox.jpg">
           <p class="member-name">mannox<span class="member-role">(PA)</span></p>
         </div>
-        <div class="member">
-          <p class="member-name">DJ uchida</p>
+        <div class="member member-clickable" data-image="images/mahomes.JPG">
+          <p class="member-name">DJ mahomes</p>
         </div>
-        <div class="member">
+        <div class="member member-clickable" data-image="images/Yurry.JPG">
           <p class="member-name">DJ Yurry</p>
         </div>
-        <div class="member">
+        <div class="member member-clickable" data-image="images/uchida.jpg">
+          <p class="member-name">DJ uchida</p>
+        </div>
+        <div class="member member-clickable" data-image="images/kohluna.JPG">
+          <p class="member-name">DJ koh/るなぴ</p>
+        </div>
+        <div class="member member-clickable" data-image="images/kom.JPG">
           <p class="member-name">DJ kom</p>
         </div>
-        <div class="member">
+        <div class="member member-clickable" data-image="images/Leo.jpg">
+          <p class="member-name">DJ Leo</p>
+        </div>
+        <div class="member member-clickable" data-image="images/moory.jpg">
           <p class="member-name">DJ moory</p>
         </div>
       </div>
@@ -75,5 +78,21 @@
       <p class="footer-url">w w w . m a n n o x . j p</p>
     </footer>
   </div>
+
+  <script>
+    document.querySelectorAll('.member-clickable').forEach(function(member) {
+      member.addEventListener('click', function() {
+        var imageSrc = this.getAttribute('data-image');
+        var heroImg = document.getElementById('about-hero');
+        heroImg.src = imageSrc;
+        heroImg.alt = this.querySelector('.member-name').textContent;
+        document.querySelectorAll('.member-clickable').forEach(function(m) {
+          m.classList.remove('member-active');
+        });
+        this.classList.add('member-active');
+        heroImg.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
 </body>
 </html>

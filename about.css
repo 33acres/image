@@ -99,6 +99,27 @@
   opacity: 0.8;
 }
 
+/* Clickable Members */
+.member-clickable {
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.member-clickable:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.member-active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.member-active .member-name {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* ============================================
    Responsive Design - About Page
    ============================================ */
