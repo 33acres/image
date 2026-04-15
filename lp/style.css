@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@400;500;600;700&display=swap');
+
+/* ==========================================================================
+   Base / Reset
+   ========================================================================== */
+html, body {
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .05em;
+}
+body {
+  font-size: 1.25rem;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #2c2a2a;
+  background: #fdf8f0;
+}
+a { text-decoration: none; color: inherit; }
+a:focus, *:focus { outline: none; }
+img { border: 0; }
+p, h1, h2, h3, h4, h5 { margin: 0; padding: 0; }
+figure { margin: 0; padding: 0; }
+ul, li, dl, ol { margin: 0; padding: 0; list-style: none; }
+dd { margin: 0; }
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   CSS Variables (Aura Development theme)
+   ========================================================================== */
+:root {
+  --clr_wht: #FFF;
+  --clr_blk: #262626;
+  --clr_gold: #b8860b;
+  --clr_gold_dark: #8B6914;
+  --clr_gold_light: #d4a843;
+  --clr_glay: #f5f0e6;
+  --clr_bg: #fdf8f0;
+  --clr_red: #e7250f;
+  --clr_pink: #e85b8a;
+  --clr_blue_accent: #4a6fa5;
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+.b { font-weight: bold; }
+.tx_cent { text-align: center; }
+.tx_left { text-align: left !important; }
+.disp_blk { display: block; }
+.inl_b { display: inline-block !important; }
+.pos_rel { position: relative; }
+.ff_min { font-family: "Noto Serif JP", serif; }
+.fw_600 { font-weight: 600 !important; }
+.fw_700 { font-weight: 700 !important; }
+.fw_800 { font-weight: 800 !important; }
+
+.pc { display: block; }
+.sp { display: none !important; }
+
+.img_w100 { width: 100%; height: auto; }
+
+.marker_tp_1 {
+  background: rgba(0,0,0,0) linear-gradient(transparent 65%, #f5f20b 0%) repeat scroll 0 0;
+}
+
+.txs_18 {
+  font-size: clamp(15px, 0.93vw, 18px);
+}
+
+/* ==========================================================================
+   Wrappers
+   ========================================================================== */
+.wrap_600 {
+  max-width: 600px;
+  margin-inline: auto;
+}
+.wrap_800 {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+/* ==========================================================================
+   Spacing Utilities
+   ========================================================================== */
+.sec_pad_50 {
+  padding: min(2.6vw, 50px) 0;
+}
+.mgn_t_5 { margin-top: 5px; }
+.mgn_t_10 { margin-top: 10px; }
+.mgn_t_20 { margin-top: min(1.04vw, 20px); }
+.mgn_t_30 { margin-top: min(1.56vw, 30px); }
+.mgn_t_50 { margin-top: min(2.6vw, 50px); }
+
+/* ==========================================================================
+   First View
+   ========================================================================== */
+.fv {
+  padding: 0;
+  display: block;
+  background: none;
+}
+
+/* ==========================================================================
+   Section Headings
+   ========================================================================== */
+.h_type_1 {
+  background: linear-gradient(90deg, #7a6520 0%, #b8960b 100%);
+  border-left: 8px solid var(--clr_gold_dark);
+  padding: 26px 2%;
+  font-size: clamp(20px, 1.56vw, 30px);
+  font-weight: 600;
+  color: #FFF;
+  text-align: center;
+  letter-spacing: .075em;
+  font-feature-settings: "palt";
+}
+
+.h_type_2 {
+  border-top: 2px solid var(--clr_gold);
+  border-bottom: 2px solid var(--clr_gold);
+  padding: 15px 0;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: .075em;
+  font-feature-settings: "palt";
+}
+
+/* ==========================================================================
+   Backgrounds
+   ========================================================================== */
+.bg_clr_glay {
+  background-color: var(--clr_glay);
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+.list_type_1 li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 1%;
+}
+.list_type_1 li:last-child {
+  margin-bottom: 0;
+}
+.list_type_1 li::after {
+  content: "\30FB";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.list_type_chk li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 3%;
+  text-align: left;
+}
+.list_type_chk li:last-child {
+  margin-bottom: 0;
+}
+.list_type_chk li::after {
+  font-family: "Material Symbols Outlined";
+  font-size: 19px;
+  content: "\e5ca";
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--clr_gold);
+}
+
+/* ==========================================================================
+   Box Styles
+   ========================================================================== */
+.bx_tp_1 {
+  overflow: hidden;
+  background: var(--clr_wht);
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.4);
+}
+
+.pad_30 {
+  padding: 30px;
+}
+
+/* ==========================================================================
+   Section p line-height
+   ========================================================================== */
+.sec p {
+  line-height: 1.8;
+}
+
+/* ==========================================================================
+   Arrow Bottom (gray section)
+   ========================================================================== */
+.sec_arrow_bottom {
+  position: relative;
+}
+.sec_arrow_bottom::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 56px solid transparent;
+  border-right: 56px solid transparent;
+  border-top: 40px solid var(--clr_glay);
+  z-index: 10;
+}
+
+/* ==========================================================================
+   Bridge Section
+   ========================================================================== */
+.bridge_section {
+  position: relative;
+  background: #ffffff;
+  padding: 72px 2% 64px;
+  text-align: center;
+}
+
+.bridge_lead {
+  font-size: clamp(20px, 1.35vw, 26px);
+  font-weight: 800;
+  color: #7a6520;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.bridge_keyword_p {
+  font-size: clamp(18px, 1.2vw, 23px);
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.bridge_keyword {
+  color: var(--clr_gold);
+  font-weight: 800;
+}
+
+.bridge_body {
+  font-size: clamp(15px, 0.95vw, 18px);
+  line-height: 2;
+  margin-bottom: 12px;
+  color: #2c2a2a;
+}
+
+.bridge_emphasis {
+  font-weight: 700;
+  color: #7a6520;
+}
+
+.bridge_marker {
+  font-weight: 700;
+  background: linear-gradient(transparent 55%, #ffecd5 55%);
+}
+
+.bridge_copy_author {
+  position: relative;
+  background: transparent;
+  padding: 22px 24px;
+  border-radius: 12px;
+  border: 2px solid #d4c49a;
+  box-shadow: 0 4px 12px rgba(184, 134, 11, 0.08);
+}
+
+/* ==========================================================================
+   Step Bar
+   ========================================================================== */
+.stepbar .stepbarwrap {
+  margin: 2em 0;
+  position: relative;
+}
+.stepbar .stepbarwrap:first-child {
+  margin-top: 0;
+}
+.stepbar .stepbarwrap:last-child {
+  margin-bottom: 0;
+}
+
+.stepbar .stepbarwrap .steptitle {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.stepbar .stepbarwrap .steptitle .stepcircle {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: var(--clr_gold);
+  color: #fff;
+  text-align: center;
+}
+
+.stepbar .stepbarwrap .steptitle .stepcircle span {
+  display: inline-block;
+  line-height: 1.2em;
+  font-size: 0.8em;
+  font-weight: bold;
+  position: relative;
+  top: 0.9em;
+}
+
+.stepbar .stepbarwrap .steptitle .title {
+  width: calc(100% - 4em);
+  margin: 0.5em;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.stepbar .stepbarwrap .steptxt {
+  padding-left: 3.5em;
+}
+
+.stepbar .stepbarwrap .stepline {
+  width: 1px;
+  height: calc(100% + 1.5em);
+  background-color: var(--clr_gold);
+  position: absolute;
+  top: 1.8em;
+  left: 1.5em;
+  z-index: -1;
+}
+
+.stepbarwrap:last-of-type .stepline:last-of-type {
+  display: none;
+}
+
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+.toc header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.toc .tit {
+  width: 65px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: .075em;
+  font-feature-settings: "palt";
+  line-height: 1;
+  padding: 4px 4px 7px;
+  border-radius: 6px;
+  color: var(--clr_wht);
+  text-align: center;
+  background: var(--clr_gold);
+}
+.toc .tit_s {
+  width: calc(100% - 65px);
+  padding-left: 1%;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: .075em;
+  font-feature-settings: "palt";
+}
+
+/* ==========================================================================
+   Profile
+   ========================================================================== */
+.prof header {
+  padding: 16px;
+  background: linear-gradient(90deg, #7a6520 0%, #b8960b 100%);
+  font-family: "Noto Serif JP", serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #FFF;
+  text-align: center;
+  letter-spacing: .07em;
+  font-feature-settings: "palt";
+}
+.prof .inn {
+  padding: 20px;
+}
+.prof .inn .stage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.prof .inn .stage .px {
+  border-radius: 10px;
+  width: 200px;
+  height: auto;
+  display: block;
+  overflow: hidden;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
+}
+.prof .inn .tx {
+  width: calc(100% - 200px);
+  padding-left: 3%;
+}
+.prof .inn .tx .in_tit {
+  font-family: "Noto Serif JP", serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: .075em;
+  font-feature-settings: "palt";
+}
+
+/* ==========================================================================
+   CTA Button
+   ========================================================================== */
+.cta_text_btn {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 18px 22px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #d4a843 0%, #b8860b 100%);
+  color: #ffffff;
+  font-size: clamp(21px, 1.45vw, 28px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(184, 134, 11, 0.35);
+  transition: opacity 0.15s linear;
+}
+.cta_text_btn:hover {
+  opacity: 0.85;
+}
+
+.cta_notice {
+  color: var(--clr_gold_dark);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Body Copy
+   ========================================================================== */
+.body_copy {
+  font-size: clamp(15px, 0.95vw, 18px);
+  line-height: 1.9;
+}
+
+.body_copy_note {
+  font-size: clamp(13px, 0.78vw, 15px);
+  line-height: 1.8;
+  color: #666;
+}
+
+/* ==========================================================================
+   Benefits Section
+   ========================================================================== */
+.benefits_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.benefit_card {
+  flex: 1;
+  min-width: 280px;
+  margin-top: 0 !important;
+}
+.benefit_header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.benefit_number {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 6px;
+  letter-spacing: .05em;
+  white-space: nowrap;
+}
+.benefit_pink {
+  background: var(--clr_pink);
+}
+.benefit_blue {
+  background: var(--clr_blue_accent);
+}
+.benefit_title {
+  font-size: clamp(17px, 1.1vw, 21px);
+  font-weight: 700;
+  color: var(--clr_gold_dark);
+}
+
+/* ==========================================================================
+   P.S. Section
+   ========================================================================== */
+.ps_section {
+  background: #fff9ef;
+  border-left: 4px solid var(--clr_gold);
+  padding: 24px 28px;
+  border-radius: 8px;
+}
+.ps_title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--clr_gold_dark);
+}
+.ps_body {
+  font-size: clamp(14px, 0.88vw, 17px);
+  line-height: 1.9;
+}
+
+/* ==========================================================================
+   Author Message
+   ========================================================================== */
+.author_msg_txt {
+  line-height: 2;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+  padding: 16px 0;
+  background: #5a4a1a;
+  font-size: 11px;
+  font-weight: 300;
+  color: #bcbcbc;
+  text-align: center;
+}
+
+/* ==========================================================================
+   RESPONSIVE: SP (max-width: 767px)
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+
+  .pc { display: none !important; }
+  .sp { display: block !important; }
+
+  .wrap_600, .wrap_800 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-inline: auto;
+    padding-right: 0.8rem !important;
+    padding-left: 0.8rem !important;
+  }
+
+  .sp_no_pad {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .sec_pad_50 {
+    padding: 6.5vw 0;
+  }
+  .mgn_t_20 {
+    margin-top: 3.5vw;
+  }
+  .mgn_t_50 {
+    margin-top: 6.5vw;
+  }
+  .mgn_t_30 {
+    margin-top: 4.5vw;
+  }
+
+  /* Heading */
+  .h_type_1 {
+    border-left-width: 5px;
+    padding: 3.5vw 2%;
+    font-size: 5.5vw;
+  }
+
+  /* CTA */
+  .cta_text_btn {
+    font-size: 5.5vw;
+    padding: 14px 12px;
+    letter-spacing: 0.04em;
+  }
+
+  /* Checklist */
+  .list_type_chk li {
+    font-weight: 600;
+  }
+
+  /* Padding */
+  .pad_30 {
+    padding: 4vw 2.5vw;
+  }
+
+  /* TOC */
+  .toc header {
+    display: block;
+  }
+  .toc .tit_s {
+    width: 100%;
+    padding: 2vw 0 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  .toc .tit {
+    display: block;
+    text-align: center;
+    margin-inline: auto;
+    font-size: 15px;
+  }
+  .toc .list_type_1 li {
+    font-size: 11px;
+  }
+
+  /* Profile */
+  .prof .inn {
+    padding: 4vw 2.5vw;
+  }
+  .prof .inn .stage {
+    display: block;
+  }
+  .prof .inn .stage .px {
+    width: min(82vw, 320px);
+    margin-inline: auto;
+    margin-bottom: 4vw;
+  }
+  .prof .inn .tx {
+    width: 100%;
+    padding-left: 0;
+  }
+  .prof .inn .tx .in_tit {
+    text-align: center;
+    font-size: 5.4vw;
+    margin-bottom: 3vw;
+  }
+
+  /* Arrow */
+  .sec_arrow_bottom::after {
+    bottom: -28px;
+    border-left-width: 40px;
+    border-right-width: 40px;
+    border-top-width: 28px;
+  }
+
+  /* Bridge */
+  .bridge_section {
+    padding: 52px 0.8rem 48px;
+  }
+  .bridge_lead {
+    font-size: 5.5vw;
+  }
+  .bridge_keyword_p {
+    font-size: 4.8vw;
+  }
+  .bridge_body {
+    font-size: 4vw;
+    line-height: 1.9;
+    text-align: center;
+  }
+  .bridge_copy_author {
+    text-align: center !important;
+  }
+
+  /* Author message */
+  .author_msg_txt {
+    text-align: center;
+  }
+
+  /* Benefits */
+  .benefits_wrap {
+    flex-direction: column;
+  }
+  .benefit_card {
+    min-width: 100%;
+  }
+
+  /* Body copy */
+  .body_copy {
+    font-size: 4vw;
+    line-height: 1.8;
+  }
+  .body_copy_note {
+    font-size: 3.5vw;
+  }
+
+  /* PS */
+  .ps_section {
+    padding: 16px 18px;
+  }
+  .ps_body {
+    font-size: 3.8vw;
+  }
+
+  /* Flex resets */
+  .flex_wrapper, .flex-wrap_par {
+    display: block;
+  }
+}
