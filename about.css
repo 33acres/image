@@ -68,6 +68,70 @@
   line-height: 1.8;
 }
 
+/* Story Section */
+.story-section {
+  margin-bottom: 50px;
+  max-width: 600px;
+  padding-left: 370px;
+}
+
+.story-heading {
+  font-family: 'Kelly Slab', cursive;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.story-timeline {
+  margin: 0 0 24px;
+}
+
+.story-timeline-item {
+  display: flex;
+  gap: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.story-timeline-item dt {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  flex-shrink: 0;
+  width: 70px;
+}
+
+.story-timeline-item dd {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ffffff;
+  margin: 0;
+}
+
+.story-subheading {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.story-events {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.story-events li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #ffffff;
+}
+
 /* Members Section */
 .members-section {
   margin-top: 10px;
@@ -138,6 +202,10 @@
     padding-left: 280px;
   }
 
+  .story-section {
+    padding-left: 280px;
+  }
+
   .bio-ja p,
   .bio-en p {
     font-size: 13px;
@@ -164,6 +232,11 @@
   .bio-en p {
     font-size: 13px;
     line-height: 1.8;
+  }
+
+  .story-section {
+    padding-left: 0;
+    max-width: 100%;
   }
 
   .members-section {
