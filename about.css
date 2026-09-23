@@ -83,39 +83,53 @@
   margin-bottom: 20px;
 }
 
-.story-block {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.story-timeline {
+  margin: 0 0 24px;
 }
 
-.story-ja p,
-.story-en p {
+.story-timeline-item {
+  display: flex;
+  gap: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.story-timeline-item dt {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  flex-shrink: 0;
+  width: 70px;
+}
+
+.story-timeline-item dd {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ffffff;
+  margin: 0;
+}
+
+.story-subheading {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.story-events {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.story-events li {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 1.9;
   color: #ffffff;
-  margin-bottom: 0;
-}
-
-.story-en {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.story-en p {
-  font-size: 13px;
-  line-height: 1.8;
-  opacity: 0.85;
-}
-
-.story-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 4px;
 }
 
 /* Members Section */
