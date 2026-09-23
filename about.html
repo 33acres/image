@@ -22,7 +22,7 @@
     <main class="about-content">
       <!-- Left: Image -->
       <div class="about-image">
-        <img id="about-hero" src="images/hero.jpg" alt="MANNOX DJ Team">
+        <img id="about-hero" src="images/hero.webp" onerror="this.onerror=null;this.src='images/hero.jpg';" alt="MANNOX DJ Team">
       </div>
 
       <!-- Right: Biography Text -->
@@ -48,28 +48,28 @@
     <!-- Members Section -->
     <section class="members-section">
       <div class="members-grid">
-        <div class="member member-clickable" data-image="images/members/mannox.jpg">
+        <div class="member member-clickable" data-image="images/members/mannox.webp" data-image-fallback="images/members/mannox.jpg">
           <p class="member-name">mannox<span class="member-role">(PA)</span></p>
         </div>
-        <div class="member member-clickable" data-image="images/members/mahomes.JPG">
+        <div class="member member-clickable" data-image="images/members/mahomes.webp" data-image-fallback="images/members/mahomes.JPG">
           <p class="member-name">DJ mahomes</p>
         </div>
-        <div class="member member-clickable" data-image="images/members/Yurry.JPG">
+        <div class="member member-clickable" data-image="images/members/Yurry.webp" data-image-fallback="images/members/Yurry.JPG">
           <p class="member-name">DJ Yurry</p>
         </div>
-        <div class="member member-clickable" data-image="images/members/uchida.jpg">
+        <div class="member member-clickable" data-image="images/members/uchida.webp" data-image-fallback="images/members/uchida.jpg">
           <p class="member-name">DJ uchida</p>
         </div>
-        <div class="member member-clickable" data-image="images/members/kohluna.JPG">
+        <div class="member member-clickable" data-image="images/members/kohluna.webp" data-image-fallback="images/members/kohluna.JPG">
           <p class="member-name">DJ koh/るなぴ</p>
         </div>
-        <div class="member member-clickable" data-image="images/members/kom.JPG">
+        <div class="member member-clickable" data-image="images/members/kom.webp" data-image-fallback="images/members/kom.JPG">
           <p class="member-name">DJ Com</p>
         </div>
-        <div class="member member-clickable" data-image="images/members/Leo.jpg">
+        <div class="member member-clickable" data-image="images/members/Leo.webp" data-image-fallback="images/members/Leo.jpg">
           <p class="member-name">DJ Leo</p>
         </div>
-        <div class="member member-clickable" data-image="images/members/moory.jpg">
+        <div class="member member-clickable" data-image="images/members/moory.webp" data-image-fallback="images/members/moory.jpg">
           <p class="member-name">DJ moory</p>
         </div>
       </div>
@@ -85,7 +85,12 @@
     document.querySelectorAll('.member-clickable').forEach(function(member) {
       member.addEventListener('click', function() {
         var imageSrc = this.getAttribute('data-image');
+        var fallbackSrc = this.getAttribute('data-image-fallback');
         var heroImg = document.getElementById('about-hero');
+        heroImg.onerror = function() {
+          heroImg.onerror = null;
+          heroImg.src = fallbackSrc;
+        };
         heroImg.src = imageSrc;
         heroImg.alt = this.querySelector('.member-name').textContent;
         document.querySelectorAll('.member-clickable').forEach(function(m) {
