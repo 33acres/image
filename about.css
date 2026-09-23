@@ -71,7 +71,7 @@
 /* Story Section */
 .story-section {
   margin-bottom: 50px;
-  max-width: 600px;
+  max-width: 970px;
   padding-left: 370px;
 }
 
@@ -201,6 +201,7 @@
   }
 
   .story-section {
+    max-width: 880px;
     padding-left: 280px;
   }
 
