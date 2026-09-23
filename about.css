@@ -1,0 +1,181 @@
+/* ============================================
+   MANNOX DJ Team - About Page Styles
+   Based on 80kidz.net/biography layout
+   ============================================ */
+
+/* Logo link */
+.logo-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo-link:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+/* About Page Container */
+.about-page {
+  justify-content: flex-start;
+}
+
+/* About Content - Two Column Layout */
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+/* About Image */
+.about-image {
+  flex-shrink: 0;
+  width: 320px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* About Text */
+.about-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.bio-ja {
+  margin-bottom: 30px;
+}
+
+.bio-ja p,
+.bio-en p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.bio-en {
+  margin-top: 30px;
+}
+
+.bio-en p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* Members Section */
+.members-section {
+  margin-top: 10px;
+  padding-left: 370px;
+}
+
+.members-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 50px;
+}
+
+.member {
+  min-width: 140px;
+}
+
+.member-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.member-role {
+  font-weight: 400;
+  font-size: 13px;
+  margin-left: 2px;
+  opacity: 0.8;
+}
+
+/* Clickable Members */
+.member-clickable {
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.member-clickable:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.member-active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.member-active .member-name {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ============================================
+   Responsive Design - About Page
+   ============================================ */
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+  .about-content {
+    gap: 30px;
+  }
+
+  .about-image {
+    width: 250px;
+  }
+
+  .members-section {
+    padding-left: 280px;
+  }
+
+  .bio-ja p,
+  .bio-en p {
+    font-size: 13px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 640px) {
+  .about-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .bio-ja p,
+  .bio-en p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .members-section {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .members-grid {
+    gap: 8px 30px;
+  }
+
+  .member-name {
+    font-size: 14px;
+  }
+}

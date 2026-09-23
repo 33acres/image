@@ -1,0 +1,218 @@
+/* ============================================
+   MANNOX DJ Team - Official Website
+   Based on 80kidz.net layout
+   ============================================ */
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #808080;
+  color: #ffffff;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Site Container */
+.site-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 80px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header / Logo */
+.header {
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-family: 'Kelly Slab', cursive;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Main Content - Two Column Layout */
+.main-content {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+}
+
+/* Navigation */
+.nav {
+  flex-shrink: 0;
+  padding-top: 8px;
+  width: 260px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav-item {
+  line-height: 1;
+}
+
+.nav-link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  padding: 5px 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+/* Hero Image */
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.footer-url {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+/* Large Desktop */
+@media screen and (min-width: 1400px) {
+  .site-container {
+    padding: 70px 100px 50px;
+  }
+
+  .logo {
+    font-size: 56px;
+  }
+
+  .hero-image img {
+    max-width: 800px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+  .site-container {
+    padding: 40px 40px 30px;
+  }
+
+  .logo {
+    font-size: 36px;
+    letter-spacing: 10px;
+  }
+
+  .nav {
+    width: 200px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 640px) {
+  .site-container {
+    padding: 30px 20px 20px;
+    min-height: 100vh;
+  }
+
+  .header {
+    margin-bottom: 16px;
+  }
+
+  .logo {
+    font-size: 28px;
+    letter-spacing: 6px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .nav {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .nav-list {
+    gap: 0;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 4px 0;
+  }
+
+  .hero-image {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  .footer {
+    padding-top: 24px;
+  }
+
+  .footer-url {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+}

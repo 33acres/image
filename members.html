@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MANNOX - Members">
+  <title>MEMBERS | MANNOX</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="members.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="site-container members-page">
+    <!-- Header / Logo -->
+    <header class="header">
+      <h1 class="logo"><a href="index.html" class="logo-link">MANNOX</a></h1>
+    </header>
+
+    <!-- Member Detail View (hidden by default, shown on click) -->
+    <div id="member-detail" class="member-detail hidden">
+      <button id="member-detail-close" class="member-detail-close">&times;</button>
+      <img id="member-detail-img" src="" alt="">
+      <p id="member-detail-name" class="member-detail-name"></p>
+    </div>
+
+    <!-- Members Grid -->
+    <main class="members-main">
+      <div class="members-card-grid">
+        <div class="member-card" data-image="images/members/mannox.jpg" data-name="mannox (PA)">
+          <div class="member-card-img">
+            <img src="images/members/mannox.jpg" alt="mannox">
+          </div>
+          <p class="member-card-name">mannox<span class="member-role">(PA)</span></p>
+        </div>
+
+        <div class="member-card" data-image="images/members/mahomes.JPG" data-name="DJ mahomes">
+          <div class="member-card-img">
+            <img src="images/members/mahomes.JPG" alt="DJ mahomes">
+          </div>
+          <p class="member-card-name">DJ mahomes</p>
+        </div>
+
+        <div class="member-card" data-image="images/members/Yurry.JPG" data-name="DJ Yurry">
+          <div class="member-card-img">
+            <img src="images/members/Yurry.JPG" alt="DJ Yurry">
+          </div>
+          <p class="member-card-name">DJ Yurry</p>
+        </div>
+
+        <div class="member-card" data-image="images/members/uchida.jpg" data-name="DJ uchida">
+          <div class="member-card-img">
+            <img src="images/members/uchida.jpg" alt="DJ uchida">
+          </div>
+          <p class="member-card-name">DJ uchida</p>
+        </div>
+
+        <div class="member-card" data-image="images/members/kohluna.JPG" data-name="DJ koh/るなぴ">
+          <div class="member-card-img">
+            <img src="images/members/kohluna.JPG" alt="DJ koh/るなぴ">
+          </div>
+          <p class="member-card-name">DJ koh/るなぴ</p>
+        </div>
+
+        <div class="member-card" data-image="images/members/kom.JPG" data-name="DJ kom">
+          <div class="member-card-img">
+            <img src="images/members/kom.JPG" alt="DJ kom">
+          </div>
+          <p class="member-card-name">DJ kom</p>
+        </div>
+
+        <div class="member-card" data-image="images/members/Leo.jpg" data-name="DJ Leo">
+          <div class="member-card-img">
+            <img src="images/members/Leo.jpg" alt="DJ Leo">
+          </div>
+          <p class="member-card-name">DJ Leo</p>
+        </div>
+
+        <div class="member-card" data-image="images/members/moory.jpg" data-name="DJ moory">
+          <div class="member-card-img">
+            <img src="images/members/moory.jpg" alt="DJ moory">
+          </div>
+          <p class="member-card-name">DJ moory</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-url">w w w . m a n n o x . j p</p>
+    </footer>
+  </div>
+
+  <script>
+    var detail = document.getElementById('member-detail');
+    var detailImg = document.getElementById('member-detail-img');
+    var detailName = document.getElementById('member-detail-name');
+    var detailClose = document.getElementById('member-detail-close');
+
+    document.querySelectorAll('.member-card').forEach(function(card) {
+      card.addEventListener('click', function() {
+        var imageSrc = this.getAttribute('data-image');
+        var name = this.getAttribute('data-name');
+        detailImg.src = imageSrc;
+        detailImg.alt = name;
+        detailName.textContent = name;
+        detail.classList.remove('hidden');
+      });
+    });
+
+    detailClose.addEventListener('click', function() {
+      detail.classList.add('hidden');
+    });
+
+    detail.addEventListener('click', function(e) {
+      if (e.target === detail) {
+        detail.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
